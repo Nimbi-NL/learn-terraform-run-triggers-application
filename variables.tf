@@ -1,6 +1,12 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+variable "aws_region" {
+  description = "AWS region for the European Sovereign Cloud partition"
+  type        = string
+  default     = "eusc-de-east-1"
+}
+
 variable "tfc_org_name" {
   description = "Name of the Terraform Cloud Organization"
   type        = string
