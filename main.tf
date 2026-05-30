@@ -14,10 +14,6 @@ data "terraform_remote_state" "network" {
 
 provider "aws" {
   region = data.terraform_remote_state.network.outputs.aws_region
-
-  endpoints {
-    sts = "https://sts.eusc-de-east-1.amazonaws.eu"
-  }
 }
 
 data "aws_ami" "amazon_linux" {
