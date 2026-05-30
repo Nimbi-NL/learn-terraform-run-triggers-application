@@ -28,5 +28,5 @@ variable "instances_per_subnet" {
 variable "instance_type" {
   description = "Type of EC2 instance to use"
   type        = string
-  default     = "t3.micro"
+  default     = "t3.medium"
 }
